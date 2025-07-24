@@ -665,6 +665,12 @@ body, html{
   border: none;
   color: white;
 }
+
+.testimonial{
+  background-color: #0a0a0a;
+  height: 900px;
+  padding-top: 30px;
+}
 @media screen and (max-width: 768px) {
   .navbar-2 .hamburger {
     display: block;
@@ -690,12 +696,6 @@ body, html{
     padding: 1.6rem 1.5rem;
   }
 
-}
-
-.testimonial{
-  background-color: #0a0a0a;
-  height: 750px;
-  padding-top: 30px;
 }
 @media screen and (min-width: 1023px) {
   .hero-items{
