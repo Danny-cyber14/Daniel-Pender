@@ -128,7 +128,7 @@ body, html{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 2rem;
+  margin-left: 0.4rem;
 }
 
 .hero-img{
@@ -229,7 +229,7 @@ body, html{
 
 .abouts{
   background-color: #0a0a0a;
-  height: 750px;
+  height: 900px;
   border-bottom: 0.8px solid #656565; /* White border line at the bottom */
   border-color: #686868;
 }
@@ -721,8 +721,8 @@ body, html{
     justify-content: space-evenly
   }
   .idiv{
-    margin-right: 8rem;
-    margin-left: 4.5rem;
+    margin-right: 1.6rem;
+    margin-left: 3rem;
   }
 
   .intro{
