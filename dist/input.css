@@ -140,6 +140,12 @@ body, html{
       transition: 0.3s ease;
       cursor: pointer;
       box-sizing: border-box;
+          user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
 }
 
 .hero-img:hover{
