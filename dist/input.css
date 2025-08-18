@@ -1005,6 +1005,10 @@ align-items: center;
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
+.brand2{
+  display: none;
+}
+
 .validate{
   width: 600px;
   height: 310px;
@@ -1015,7 +1019,7 @@ align-items: center;
 }
 
   .navbar-2 .nav-menu{
-    gap:0.6rem;
+    gap:0.9rem;
   }
 
   .products{
