@@ -122,6 +122,8 @@ body, html{
   display: flex;
   background-color: rgb(15, 14, 14);
   height: 650px;
+    justify-content: center;
+  align-items: center;
 }
 .hero-items{
   display: flex;
@@ -156,32 +158,7 @@ body, html{
 .idiv{
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-
-  .container {
-      position: relative;
-      width: 200px;
-      height: 200px;
-    }
-
-.lottie-hand {
-      position: absolute;
-       top: 10px;
-      right: 10px;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      display: none;
-    }
-
-    .container:hover .lottie-hand {
-      display: block;
-    }
-
-    .container:hover .profile-pic {
-      opacity: 0.3;
-    }
 
 .about1{
   color: rgb(15, 217, 99);
@@ -796,10 +773,19 @@ body, html{
   .hero-items{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+   justify-content: space-evenly;
   }
 
-
+  .idiv{
+    margin-right: 2rem;
+  }
+  
+.hero{
+      display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
   
   .product-1-img{
     width: 90%;
@@ -814,10 +800,6 @@ body, html{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly
-  }
-  .idiv{
-    margin-right: 1.6rem;
-    margin-left: 3rem;
   }
 
   .intro{
