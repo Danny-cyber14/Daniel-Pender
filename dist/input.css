@@ -441,7 +441,7 @@ body, html{
 
 .skills{
   background: linear-gradient(rgba(11, 11, 11, 0.4), rgba(53, 53, 53, 0.4));
-  height: 650px;
+  height: 700px;
   font-size: 20px;
 
 }
@@ -667,7 +667,7 @@ body, html{
   background-blend-mode: multiply;
   border: 1px solid rgb(0, 255, 81);
   border-radius: 5px;
-  height: 360px;
+  height: 380px;
   width: 360px;
   display: flex;
   align-items: center;
@@ -729,6 +729,7 @@ body, html{
 
 .response{
   margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .form{
@@ -912,7 +913,7 @@ align-items: center;
   background-blend-mode: multiply;
   border: 1px solid rgb(0, 255, 81);
   border-radius: 5px;
-  height: 310px;
+  height: 330px;
   width: 700px;
 }
 
