@@ -46,9 +46,10 @@ body, html{
   flex-wrap: wrap;
   border-bottom-width: 0.01rem;
   border-color: rgb(202, 202, 202);
-  border-bottom: 1px solid rgb(154, 154, 154, 0.6);
+  border-bottom: 1px solid rgb(1, 53, 0);
   transition: 0.3s ease;
   backdrop-filter: blur(10px);
+    box-shadow: 0 6px 6px -4px rgba(0, 202, 27, 0.692);
 }
 
 .navbar-2:hover{
