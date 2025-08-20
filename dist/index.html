@@ -304,6 +304,33 @@ rel="stylesheet"
 <link rel="stylesheet" href="chatbot.css" />
 <script src="chatbot.js"></script>
 
+
+<!-- Magnetic effects on btns-->
+ <script>
+  // Select ALL buttons with the same class
+const buttons = document.querySelectorAll(".proj-button, .btn-form, .contact-button, .product-link-b");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("mousemove", (e) => {
+    const rect = btn.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 3;
+    const y = e.clientY - rect.top - rect.height / 3;
+    btn.style.transform = `translate(${x * 0.5}px, ${y * 0.5}px)`;
+  });
+
+  btn.addEventListener("mouseleave", () => {
+    btn.style.transform = "translate(0, 0)";
+  });
+});
+
+   const glow = document.querySelector(".cursor-glow");
+    document.addEventListener("mousemove", (e) => {
+      glow.style.setProperty("--x", e.pageX + "px");
+      glow.style.setProperty("--y", e.pageY + "px");
+    });
+
+ </script>
+
 <!--CHATBOT CODE-->
 <script>
 // Questions & answers
