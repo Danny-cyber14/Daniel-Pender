@@ -284,7 +284,82 @@ rel="stylesheet"
 </div>
 </footer>
 
+<!-- Chatbot Widget -->
+<div id="chatbot-toggle">💬</div>
 
+<div id="chatbot-container" class="hidden">
+  <div id="chatbot-header">
+    <span>Ask Me Anything</span>
+    <span id="chatbot-back" class="hidden">⬅</span>
+  </div>
+  <div id="chatbot-body">
+    <!-- Tags Section -->
+    <div id="chatbot-tags"></div>
+    <!-- Answer Section -->
+    <div id="chatbot-answer" class="hidden"></div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<link rel="stylesheet" href="chatbot.css" />
+<script src="chatbot.js"></script>
+
+<!--CHATBOT CODE-->
+<script>
+// Questions & answers
+const faqData = [
+  { tag: "current studies", answer: "I'm currently studying software enginnering" },
+  { tag: "Current programming language", answer: "I'm currently dealing with JavaScripts and projects on JavaScript" },
+  { tag: "Contact Info", answer: "You can reach me at: danielefepender@gmail.com or +2348069970196" },
+  { tag: "Hobbies", answer: "I enjoy coding, gaming, listening to podcasts and YouTube streaming" },
+  { tag: "Education status", answer: "Currently in High School; 12th grade and will be graduating next" },
+   { tag: "Projects", answer: "I have built a lot of projects using my skills in front end development to create stunning sites. Check them out in the projects section or  my github, links are provided throughout the page." },
+     { tag: "Socials", answer: "Check out at page footer" },
+
+
+];
+
+// DOM elements
+const chatbotToggle = document.getElementById("chatbot-toggle");
+const chatbotContainer = document.getElementById("chatbot-container");
+const tagsContainer = document.getElementById("chatbot-tags");
+const answerBox = document.getElementById("chatbot-answer");
+const backBtn = document.getElementById("chatbot-back");
+
+//toggle chatbot visibility
+
+chatbotToggle.addEventListener("click", () => {
+  chatbotContainer.classList.toggle("show");
+});
+// Load tags
+faqData.forEach((item, i) => {
+  const btn = document.createElement("button");
+  btn.innerText = item.tag;
+  btn.addEventListener("click", () => showAnswer(i));
+  tagsContainer.appendChild(btn);
+});
+
+// Show answer
+function showAnswer(index) {
+  tagsContainer.classList.add("hidden");
+  backBtn.classList.remove("hidden");
+
+  setTimeout(() => {
+    answerBox.innerText = faqData[index].answer;
+    answerBox.classList.remove("hidden");
+  }, 300); // delay for realism
+}
+
+// Go back
+backBtn.addEventListener("click", () => {
+  answerBox.classList.add("hidden");
+  backBtn.classList.add("hidden");
+  setTimeout(() => {
+    tagsContainer.classList.remove("hidden");
+  }, 200);
+});
+
+</script>
 
 <!-- Keep this JS for validation -->
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>

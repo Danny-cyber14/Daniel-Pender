@@ -740,6 +740,129 @@ body, html{
   align-items: center;
 }
 
+
+/* Chatbot toggle button */
+#chatbot-toggle {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  background: rgba(0, 255, 128, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 6px 6px 12px #0f0f0f, -6px -6px 12px #1a1a1a;
+  transition: all 0.2s ease-in-out;
+  color: #00ff88;
+}
+#chatbot-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Chatbot container */
+#chatbot-container {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background: rgba(20, 20, 20, 0.7);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4),
+              -10px -10px 30px rgba(60, 255, 100, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  /* animation magic */
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#chatbot-container.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+/* Header */
+#chatbot-header {
+  padding: 12px;
+  background: rgba(0, 255, 55, 0.268);
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+}
+#chatbot-back {
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #00ff88;
+}
+
+/* Body */
+#chatbot-body {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+/* Tags (scrollable) */
+#chatbot-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  overflow-y: auto;
+  padding: 8px;
+}
+#chatbot-tags button {
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: rgba(30, 30, 30, 0.9);
+  box-shadow: inset 4px 4px 6px #0f0f0f, inset -4px -4px 6px #1a1a1a;
+  border: none;
+  color: #00ff88;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+#chatbot-tags button:hover {
+  background: rgba(0, 255, 128, 0.2);
+}
+
+/* Answer section */
+#chatbot-answer {
+  padding: 12px;
+  font-size: 15px;
+  line-height: 1.4;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 @media screen and (max-width: 768px) {
   .form-span{
   display: none;
