@@ -10,16 +10,6 @@
   color: black; /* Optional: makes selected text white */
 }
 
-*::-webkit-scrollbar {
-  width: 0px;              /* completely hide scrollbar */
-  height: 0px;
-}
-
-/* For Firefox */
-* {
-  scrollbar-width: none;   /* hides scrollbar in Firefox */
-  -ms-overflow-style: none; /* IE/Edge Legacy */
-}
 
 
 body, html{
@@ -33,37 +23,7 @@ body, html{
    user-select: none;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none;  
-    overflow: auto; 
-  height: 100%;
 }
-
-html:hover, 
-body:hover, 
-*:hover {
-  scrollbar-width: thin;   /* Firefox */
-  scrollbar-color: rgba(0,255,136,0.5) transparent;
-}
-
-html:hover::-webkit-scrollbar,
-body:hover::-webkit-scrollbar,
-*:hover::-webkit-scrollbar {
-  width: 8px;              /* visible scrollbar width */
-  height: 8px;
-}
-
-html:hover::-webkit-scrollbar-thumb,
-body:hover::-webkit-scrollbar-thumb,
-*:hover::-webkit-scrollbar-thumb {
-  background: rgba(0,255,136,0.45);  /* green glow scrollbar */
-  border-radius: 10px;
-}
-
-html:hover::-webkit-scrollbar-track,
-body:hover::-webkit-scrollbar-track,
-*:hover::-webkit-scrollbar-track {
-  background: transparent;
-}
-
 
 
 .header{
