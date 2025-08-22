@@ -1,333 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A showcase of my projects, skills, and creative experiments in web development.">
+  <!DOCTYPE html>  <html lang="en">  <head>  <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <meta name="description" content="A showcase of my projects, skills, and creative experiments in web development.">  <!-- Open Graph (used by Facebook, LinkedIn, Discord, WhatsApp) -->  <meta property="og:title" content="Daniel Pender |  SwiftDev | Portfolio">  <meta property="og:description" content="Showcasing innovative web projects and interactive experiments, blending design with functionality.">  <meta property="og:image" content="https://raw.githubusercontent.com/Danny-cyber14/Daniel-Pender/main/dist/assets/Screenshot_21-8-2025_12423_127.0.0.1.jpeg  ">  <meta property="og:url" content="https://daniel-pender.vercel.app/">  <meta property="og:type" content="website">  <!-- Twitter Cards -->  <meta name="twitter:card" content="summary_large_image">  <meta name="twitter:title" content="Daniel Pender |  SwiftDev | Portfolio">  <meta name="twitter:description" content="Showcasing innovative web projects and interactive experiments, blending design with functionality.">  <meta name="twitter:image" content="https://raw.githubusercontent.com/Danny-cyber14/Daniel-Pender/main/dist/assets/Screenshot_21-8-2025_12423_127.0.0.1.jpeg  ">  <meta name="twitter:url" content="https://daniel-pender.vercel.app/">  <!--title-->  <title>PENDER DANIEL | SwiftDev</title>  <!--css link--> 
+<style>
+  /* Make canvas cover the whole screen */
+  #starry-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0; /* stays behind your content */
+    background: black; /* space backdrop */
+  }
+</style> <link rel="stylesheet" href="portfolio.css">  <!--icon link-->  <link  href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"  rel="stylesheet"/>  <link    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"    rel="stylesheet"/>  <!--favicon link-->  <link rel="icon" type="image/x-icon" href="../assets/P.png">  </head>  <body>  <canvas id="starry-bg"></canvas><header class="header">   <nav class="navbar-2">      <div class="brand"><a href="#" class="hlink">Pender Daniel<span class="brand2"> | Swift Dev</span> </a></div>      <div class="hamburger" onclick="toggleMenu()">    <i class="ri-menu-3-fill"></i>      </div>      <ul class="nav-menu" id="nav-menu">         <li><a href="index.html">Home</a></li>        <li><a href="#projects">Projects</a></li>        <li><a href="#skills">Skills</a></li>        <li><a href="#services">Services</a></li>        <li><a href="#contact">Contact</a></li>        <li><a href="#products">Products</a></li>        <li><a href="#subscribe">Subscribe</a></li>      </ul>    </nav>      </header>     <div class="space2"></div> <div class="page-content">   <section class="hero">        <div class="hero-items">        <div class="idiv">        <h1 class="intro">       I'm Pender Daniel<br>Frontend Developer        </h1>                <p class="p1">          I build modern, responsive websites<br> using HTML, CSS, and JavaScript. <br>I bring your brand online with style and precision.        </p>      </div>      <div class="container">      <img src="./assets/IMG-20250519-WA0004.jpg" alt="Profile" class="hero-img">      </div>      </div>      </section>  <div class="space"><i class="ri-code-s-slash-line"></i> <p>Clean Codes</p> </div>    <section class="abouts" >        <h1 class="about1">          About Me        </h1>        <h2 class="about2">          Web Developer | Creative Technologist        </h2>        <p class="aboutp">          Hi, I'm Pender Daniel, a self-taught frontend developer from Nigeria. I love turning ideas into interactive, clean, and modern layouts. I'm currently focused on building beautiful UIs and helping small businesses go digital.<br><br>I specialize in crafting responsive websites, tech-based tools, and interactive UIs that not only catch eyes but also elevate functionality. Whether I’m working on a personal project or collaborating with a team, my goal is to deliver results that impress and inspire        </p>        <h2 class="vision">Vision</h2>        <p class="vp">To lead a new generation of developers and innovators by creating tech that’s not only powerful but personal — shaping the future of web, gaming, AI, and robotics through purposeful design and boundary-breaking creativity.</p>        <h2 class="mission">Mission</h2>        <p class="mp">To design and build sleek, high-performing digital experiences that are bold, intuitive, and future-ready — empowering brands, creators, and gamers to stand out online through code, creativity, and innovation.</p>      </section>   <div class="space"></div>       <div class="projects-container" id="projects">    <h1 class="projects">Projects</h1>    <h2 class="GitHub">GitHub: <a href="https://github.com/Danny-cyber14" target="blank" class="gitlink">click here</a></h2>    <button onclick="scrollProjects(-1)" class="scroll-btn left">⬅</button>      <section class="projects-wrapper" >     <div class="project-slide">      <div>     <img src="./assets/car rental.png" alt="RentalX" class="proj-img">    </div>      <div class="description-contanier">       <h2 class="title">RentalX</h2>       <p class="descr">RentalX is a sleek front-end work for automobile showcasing and vendoring purposes. The template is available for purchasing if interested.</p>      <a href="https://car-rental-pi-one.vercel.app/" target="_blank"><button class="proj-button">see more...</button></a>      </div>    </div>    <div class="project-slide">      <div>     <img src="./assets/furnit.png" alt="Furnit" class="proj-img">    </div>      <div class="description-contanier">       <h2 class="title">FurniT</h2>       <p class="descr">FurniT is a sleek front-end work for a furniture site. The template is available for purchasing if interested.</p>      <a href="https://furnit-omega.vercel.app/" target="_blank"><button class="proj-button">see more...</button></a>      </div>    </div>  <div class="project-slide">      <div>     <img src="./assets/automod.png" alt="automod" class="proj-img">    </div>      <div class="description-contanier">       <h2 class="title">Automod</h2>       <p class="descr">Automod is a sleek front-end work for automobile showcasing and vendoring purposes also. The template is available for purchasing if interested.</p>      <a href="https://auto-mod-cars.vercel.app/" target="_blank"><button class="proj-button">see more...</button></a>      </div>    </div>     <div class="project-slide">      <div>     <img src="./assets/Screenshot 2025-08-14 141247.png" alt="highflyers" class="proj-img">    </div>      <div class="description-contanier">       <h2 class="title">HIGHFLYERS</h2>       <p class="descr">HIGHFLYERS is an educational institution website. Template available for purchase.</p>      <a href="https://highflyers-nu.vercel.app/" target="_blank"><button class="proj-button">see more...</button></a>      </div>    </div>       <div class="project-slide">      <div>     <img src="./assets/icecream.png" alt="cryoluxe" class="proj-img">    </div>      <div class="description-contanier">       <h2 class="title">Cryoluxe</h2>       <p class="descr">Cryoluxe or Ice world is a sleek and frosty front-end work for ice cream varieties and vendoring purposes. The template is available for purchasing if interested.</p>      <a href="https://cryoluxecones.vercel.app/" target="_blank"><button class="proj-button">see more...</button></a>      </div>    </div>        <!-- More slides -->  </section>    <button onclick="scrollProjects(1)" class="scroll-btn right">→</button>  </div>  <div class="space"></div>  <section class="skills" id="skills" >    <h1 class="skills-h1">My Stack</h1>  <div class="stack">  <div class="first-column">    <div class="items"><img src="./assets/html.webp" alt="html" class="i-image"> HTML5</div>    <div class="items"><img src="./assets/css.webp" alt="css"class="i-image"> CSS3</div>    <div class="items"><img src="./assets/js.png" alt="html"class="i-image"> JavaScript</div>    <div class="items"><img src="./assets/images.jfif" alt="html"class="i-image"> Bootstrap</div>      <div class="items"><img src="./assets/postman (1).webp" alt="html"class="i-image"> Postman</div>  </div>  <div class="second-column">  <div class="items"><img src="./assets/tailwind.png" alt="html"class="i-image"> Tailwind</div>  <div class="items"><img src="./assets/git.png" alt="html"class="i-image"> Git control</div>  <div class="items"><img src="./assets/github.png" alt="html"class="i-image"> GitHub</div>  <div class="items"><img src="./assets/vscode.webp" alt="html"class="i-image">VS Code</div>  <div class="items">Graphics Design(UI/UX designer)</div>  </div>  </div>  </section>  <div class="space"></div>  <section class="service" id="services" >    <h1 class="service-h1">Services I offer</h1>  <ul class="serve">    <li class="serves">Web Development (Front-end)</li>    <li class="serves">Web Design(UI/UX)</li>    <li class="serves">Web Maintainance(website management)</li>    <li class="serves">Rebranding / restyling websites</li>    <li class="serves">SEO Optimization</li>  </ul>  </section> <div class="space"></div>   <section id="contact" class="contact-section" >    <div class="work">    <h3 class="contact-heading">Let’s Work</h3>    <p class="contact-text">      Have a project in mind? Need a frontend layout? Reach me via:    </p>    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=danielefepender@gmail.com&su=Let’s%20Work%20Together&body=Hello" class="contact-button" target="_blank">      My Email    </a>  </div>    <div class="lottie-container">      <lottie-player     src="./Business financial and sales goals.json"      background="transparent"      speed="1"      style="width: 400px; height: 400px;"      loop      autoplay>  </lottie-player>    </div>  </section>  <div class="space"><i class="ri-timer-flash-fill"></i><p>Early Delivery</p></div>  <section class="testimonial" >    <h1 class="head">What People have to say</h1>    <div class="t-item-column">    <div class="t-item-row">      <div class="t-item">        <h2 class="name">Mr. Mfoniso Akpatang</h2>        <p class="test">I'm glad to recommend him to anyone who crosses his path. He'll deliver with excellence. +2348152104849</p>      </div>      <div class="t-item">        <h2 class="name">Mr. Uduak Joshua</h2>        <p class="test">Always delivers with excellence — highly recommend to anyone! +2349124770124</p>      </div>    </div>     <div class="t-item" id="t-3-item">        <h2 class="name">Mr. Nwadire Chuks</h2>        <p class="test">If he’s on your team, expect results. Straight-up excellence. +2349049720367</p>      </div>      </div>  </section>  <div class="space"></div>  <section class="products" id="products" >    <h1 class="product-head">Products</h1>    <div class="product-1">    <div class="product-1-imagge">    <img src="./assets/swiftelements.png" alt="swiftelement" class="product-1-img">    </div>    <div class="product-1-description">      <h2 class="product-1-h">     Gumroad_Swift Elements - Stylish HTML and CSS UI Templates      </h2>      <a href="https://danpender.gumroad.com/l/fwhnr" class="product-link"><button class="product-link-b">Buy Here...</button></a>    </div>    </div>  </section>  <div class="space"></div>  <section class="form" id="subscribe">    <div id="mc_embed_signup" class="form-cont">      <form action="https://app.us4.list-manage.com/subscribe/post?u=1d08fbe766437108da003cf7a&amp;id=ce9769412e&amp;f_id=002b56e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="validate">          <div id="mc_embed_signup_scroll">              <h2 class="form-h2">Subscribe To Get Updates <span class="form-span"> From The Developer </span></h2>              <div class="mc-field-group">                  <label for="mce-EMAIL" class="label">Email Address <span>:</span></label><br><br>                  <input type="email" name="EMAIL" class="email-input" id="mce-EMAIL" required><br><br><br>              </div>              <div id="mce-responses">                  <div class="response" id="mce-error-response" style="display:none;"></div>                  <div class="response" id="mce-success-response" style="display:none;"></div>              </div>              <!-- Anti-bot hidden input - do not remove -->              <div style="position: absolute; left: -5000px;" aria-hidden="true">                  <input type="text" name="b_1d08fbe766437108da003cf7a_ce9769412e" tabindex="-1" value="">              </div>              <div class="clear foot">                 <button  type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe" class="btn-form">subscribe</button>              </div>          </div>      </form>  </div>  </section>   <div class="space"><i class="ri-mail-send-fill"></i> <p>Email Updates</p></div>     <footer class="footer-2" >        <div class="footer-column">          <p>&copy; Daniel Pender 2025. All rights reserved.</p>        </div>    <div class="footer-column">      <h3>Quick Links</h3>      <ul>        <li><a href="index.html">Home</a></li>        <li><a href="#projects">Projects</a></li>        <li><a href="#skills">Skills</a></li>        <li><a href="#services">Services</a></li>        <li><a href="#contact">Contact</a></li>         <li><a href="#products">Products</a></li>         <li><a href="#subscribe">Subscribe</a></li>      </ul>    </div>    <div class="footer-column">      <h3>Contact</h3>      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=danielefepender@gmail.com&su=Let’s%20Work%20Together&body=Hello" class="email-link">danielefepender@gmail.com</a><br><br>      <a href="tel:+2348069970196" class="phone-link"><i class="fa-solid fa-phone"></i>+234-8069-9701-96</a>    </div>      <div id="icons" class="icons ">    <div><a href="https://web.facebook.com/DannyBOSSp" class="iitems" target="_blank"><i class="ri-facebook-circle-fill"></i></a></div>    <div><a href="https://www.instagram.com/danny_boss_p/" class="iitems" target="_blank"><i class="ri-instagram-fill"></i></a></div>    <div><a href="https://x.com/DANNY13PM" class="iitems" target="_blank"><i class="ri-twitter-x-line"></i></a></div>    <div><a href="https://wa.me/2348069970196" class="iitems" target="_blank"><i class="ri-whatsapp-fill"></i></a></div>    <div><a href="https://www.youtube.com/channel/UCjj6uxYsmI2o5eNPkgbPS7A" class="iitems" target="_blank"><i class="ri-youtube-fill"></i></a></div>    <div><a href="https://www.linkedin.com/in/daniel-pender-98ab90354/" class="iitems" target="_blank"><i class="ri-linkedin-fill"></i></a></div>    <div><a href="https://github.com/Danny-cyber14" class="iitems" target="_blank"><i class="ri-github-fill"></i></a></div>  </div>  </footer>  <!-- Chatbot Widget -->  <div id="chatbot-toggle"><i class="ri-chat-1-line"></i></div>  <div id="chatbot-container" class="hidden">    <div id="chatbot-header">      <span>FAQs</span>      <span id="chatbot-back" class="hidden">⬅</span>    </div>    <div id="chatbot-body">      <!-- Tags Section -->      <div id="chatbot-tags"></div>      <!-- Answer Section -->      <div id="chatbot-answer" class="hidden"></div>    </div>  </div> <!-- Magnetic effects on btns-->
 
-<!-- Open Graph (used by Facebook, LinkedIn, Discord, WhatsApp) -->
-<meta property="og:title" content="Daniel Pender |  SwiftDev | Portfolio">
-<meta property="og:description" content="Showcasing innovative web projects and interactive experiments, blending design with functionality.">
-<meta property="og:image" content="https://raw.githubusercontent.com/Danny-cyber14/Daniel-Pender/main/dist/assets/Screenshot_21-8-2025_12423_127.0.0.1.jpeg
-">
-<meta property="og:url" content="https://daniel-pender.vercel.app/">
-<meta property="og:type" content="website">
-
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Daniel Pender |  SwiftDev | Portfolio">
-<meta name="twitter:description" content="Showcasing innovative web projects and interactive experiments, blending design with functionality.">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/Danny-cyber14/Daniel-Pender/main/dist/assets/Screenshot_21-8-2025_12423_127.0.0.1.jpeg
-">
-<meta name="twitter:url" content="https://daniel-pender.vercel.app/">
-    <title>PENDER DANIEL | SwiftDev</title>
-
-    <link rel="stylesheet" href="input.css">
-
-    <link
-href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-rel="stylesheet"
-/>
-
-<link
-  href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-  rel="stylesheet"
-/>
-
-<link rel="icon" type="image/x-icon" href="../assets/P.png">
-<!-- AOS CSS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-</head>
-<body>
-        <header class="header">
- <nav class="navbar-2">
-    <div class="brand"><a href="#" class="hlink">Pender Daniel<span class="brand2"> | Swift Dev</span> </a></div>
-    <div class="hamburger" onclick="toggleMenu()">
-  <i class="ri-menu-3-fill"></i>
     </div>
-    <ul class="nav-menu" id="nav-menu">
-       <li><a href="index.html">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#subscribe">Subscribe</a></li>
-    </ul>
-  </nav>
-    </header>
 
-    <section class="hero"data-aos="fade-up">
-      <div class="hero-items">
-      <div class="idiv">
-      <h1 class="intro">
-     I'm Pender Daniel<br>Frontend Developer
-      </h1>
-      
-      <p class="p1">
-        I build modern, responsive websites<br> using HTML, CSS, and JavaScript. <br>I bring your brand online with style and precision.
-      </p>
-    </div>
-    <div class="container">
-    <img src="./assets/IMG-20250519-WA0004.jpg" alt="Profile" class="hero-img">
-    </div>
-    </div>
-    </section>
+<script>
+  const canvas = document.getElementById("starry-bg");
+  const ctx = canvas.getContext("2d");
 
-    <section class="abouts" data-aos="fade-up">
-      <h1 class="about1">
-        About Me
-      </h1>
-      <h2 class="about2">
-        Web Developer | Creative Technologist
-      </h2>
-      <p class="aboutp">
-        Hi, I'm Pender Daniel, a self-taught frontend developer from Nigeria. I love turning ideas into interactive, clean, and modern layouts. I'm currently focused on building beautiful UIs and helping small businesses go digital.<br><br>I specialize in crafting responsive websites, tech-based tools, and interactive UIs that not only catch eyes but also elevate functionality. Whether I’m working on a personal project or collaborating with a team, my goal is to deliver results that impress and inspire
-      </p>
-      <h2 class="vision">Vision</h2>
-      <p class="vp">To lead a new generation of developers and innovators by creating tech that’s not only powerful but personal — shaping the future of web, gaming, AI, and robotics through purposeful design and boundary-breaking creativity.</p>
-      <h2 class="mission">Mission</h2>
-      <p class="mp">To design and build sleek, high-performing digital experiences that are bold, intuitive, and future-ready — empowering brands, creators, and gamers to stand out online through code, creativity, and innovation.</p>
-    </section>
-    
-<div class="projects-container" id="projects">
-  <h1 class="projects">Projects</h1>
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  window.addEventListener("resize", resizeCanvas);
+  resizeCanvas();
 
-  <h2 class="GitHub">GitHub: <a href="https://github.com/Danny-cyber14" target="blank" class="gitlink">click here</a></h2>
-  <button onclick="scrollProjects(-1)" class="scroll-btn left">⬅</button>
-    <section class="projects-wrapper" data-aos="fade-up">
-  <div class="project-slide">
-    <div>
-   <img src="./assets/furnit.png" alt="Furnit" class="proj-img">
-  </div>
-    <div class="description-contanier">
-     <h2 class="title">FurniT</h2>
-     <p class="descr">FurniT is a sleek front-end work for a furniture site. The template is available for purchasing if interested.</p>
-    <a href="https://furnit-omega.vercel.app/" target="_blank"><button class="proj-button">see more...</button></a>
-    </div>
-  </div>
-  <div class="project-slide">
-    <div>
-   <img src="./assets/car rental.png" alt="RentalX" class="proj-img">
-  </div>
-    <div class="description-contanier">
-     <h2 class="title">RentalX</h2>
-     <p class="descr">RentalX is a sleek front-end work for automobile showcasing and vendoring purposes. The template is available for purchasing if interested.</p>
-    <a href="https://car-rental-pi-one.vercel.app/" target="_blank"><button class="proj-button">see more...</button></a>
-    </div>
-  </div>
-   <div class="project-slide">
-    <div>
-   <img src="./assets/automod.png" alt="automod" class="proj-img">
-  </div>
-    <div class="description-contanier">
-     <h2 class="title">Automod</h2>
-     <p class="descr">Automod is a sleek front-end work for automobile showcasing and vendoring purposes also. The template is available for purchasing if interested.</p>
-    <a href="https://auto-mod-cars.vercel.app/" target="_blank"><button class="proj-button">see more...</button></a>
-    </div>
-  </div>
-   <div class="project-slide">
-    <div>
-   <img src="./assets/Screenshot 2025-08-14 141247.png" alt="highflyers" class="proj-img">
-  </div>
-    <div class="description-contanier">
-     <h2 class="title">HIGHFLYERS</h2>
-     <p class="descr">HIGHFLYERS is an educational institution website. Template available for purchase.</p>
-    <a href="https://highflyers-nu.vercel.app/" target="_blank"><button class="proj-button">see more...</button></a>
-    </div>
-  </div>
-     <div class="project-slide">
-    <div>
-   <img src="./assets/icecream.png" alt="cryoluxe" class="proj-img">
-  </div>
-    <div class="description-contanier">
-     <h2 class="title">Cryoluxe</h2>
-     <p class="descr">Cryoluxe or Ice world is a sleek and frosty front-end work for ice cream varieties and vendoring purposes. The template is available for purchasing if interested.</p>
-    <a href="https://cryoluxecones.vercel.app/" target="_blank"><button class="proj-button">see more...</button></a>
-    </div>
-  </div>
-  
-  <!-- More slides -->
-</section>
-  <button onclick="scrollProjects(1)" class="scroll-btn right">→</button>
-</div>
+  // Generate stars
+  const numStars = 1000; // tweak number of stars ✨
+  const stars = [];
 
+  for (let i = 0; i < numStars; i++) {
+    stars.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      radius: Math.random() * 1.5 + 0.5,
+      speed: Math.random() * 0.5 + 0.2,
+      opacity: Math.random()
+    });
+  }
 
-<section class="skills" id="skills" data-aos="fade-up">
-  <h1 class="skills-h1">My Stack</h1>
-<div class="stack">
-<div class="first-column">
-  <div class="items"><img src="./assets/html.webp" alt="html" class="i-image"> HTML5</div>
-  <div class="items"><img src="./assets/css.webp" alt="css"class="i-image"> CSS3</div>
-  <div class="items"><img src="./assets/js.png" alt="html"class="i-image"> JavaScript</div>
-  <div class="items"><img src="./assets/images.jfif" alt="html"class="i-image"> Bootstrap</div>
-    <div class="items"><img src="./assets/postman (1).webp" alt="html"class="i-image"> Postman</div>
-</div>
-<div class="second-column">
-<div class="items"><img src="./assets/tailwind.png" alt="html"class="i-image"> Tailwind</div>
-<div class="items"><img src="./assets/git.png" alt="html"class="i-image"> Git control</div>
-<div class="items"><img src="./assets/github.png" alt="html"class="i-image"> GitHub</div>
-<div class="items"><img src="./assets/vscode.webp" alt="html"class="i-image">VS Code</div>
-<div class="items">Graphics Design(UI/UX designer)</div>
-</div>
-</div>
-</section>
+  function drawStars() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let star of stars) {
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
+      ctx.fill();
 
+      // twinkle effect
+      star.opacity += (Math.random() - 0.5) * 0.05;
+      if (star.opacity < 0.1) star.opacity = 0.1;
+      if (star.opacity > 1) star.opacity = 1;
 
-<section class="service" id="services" data-aos="fade-up">
-  <h1 class="service-h1">Services I offer</h1>
-<ul class="serve">
-  <li class="serves">Web Development (Front-end)</li>
-  <li class="serves">Web Design(UI/UX)</li>
-  <li class="serves">Web Maintainance(website management)</li>
-  <li class="serves">Rebranding / restyling websites</li>
-  <li class="serves">SEO Optimization</li>
-</ul>
-</section>
+      // slight movement
+      star.y += star.speed;
+      if (star.y > canvas.height) {
+        star.y = 1;
+        star.x = Math.random() * canvas.width;
+      }
+    }
+    requestAnimationFrame(drawStars);
+  }
 
-<section id="contact" class="contact-section" data-aos="fade-up">
-  <div class="work">
-  <h3 class="contact-heading">Let’s Work</h3>
-  <p class="contact-text">
-    Have a project in mind? Need a frontend layout? Reach me via:
-  </p>
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=danielefepender@gmail.com&su=Let’s%20Work%20Together&body=Hello" class="contact-button" target="_blank">
-    My Email
-  </a>
-</div>
-  <div class="lottie-container">
-    <lottie-player 
-  src="./Business financial and sales goals.json"  
-  background="transparent"  
-  speed="1"  
-  style="width: 400px; height: 400px;"  
-  loop  
-  autoplay>
-</lottie-player>
-  </div>
-</section>
+  drawStars();
+</script>
 
-<section class="testimonial" data-aos="fade-up">
-  <h1 class="head">What People have to say</h1>
-  <div class="t-item-column">
-  <div class="t-item-row">
-    <div class="t-item">
-      <h2 class="name">Mr. Mfoniso Akpatang</h2>
-      <p class="test">I'm glad to recommend him to anyone who crosses his path. He'll deliver with excellence. +2348152104849</p>
-    </div>
-    <div class="t-item">
-      <h2 class="name">Mr. Uduak Joshua</h2>
-      <p class="test">Always delivers with excellence — highly recommend to anyone! +2349124770124</p>
-    </div>
-  </div>
-   <div class="t-item" id="t-3-item">
-      <h2 class="name">Mr. Nwadire Chuks</h2>
-      <p class="test">If he’s on your team, expect results. Straight-up excellence. +2349049720367</p>
-    </div>
-    </div>
-</section>
-
-<section class="products" id="products" data-aos="fade-up">
-  <h1 class="product-head">Products</h1>
-  <div class="product-1">
-  <div class="product-1-imagge">
-  <img src="./assets/swiftelements.png" alt="swiftelement" class="product-1-img">
-  </div>
-  <div class="product-1-description">
-    <h2 class="product-1-h">
-   Gumroad_Swift Elements - Stylish HTML and CSS UI Templates
-    </h2>
-    <a href="https://danpender.gumroad.com/l/fwhnr" class="product-link"><button class="product-link-b">Buy Here...</button></a>
-  </div>
-  </div>
-</section>
-<section class="form" id="subscribe">
-  <div id="mc_embed_signup" class="form-cont">
-    <form action="https://app.us4.list-manage.com/subscribe/post?u=1d08fbe766437108da003cf7a&amp;id=ce9769412e&amp;f_id=002b56e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="validate">
-        <div id="mc_embed_signup_scroll">
-            <h2 class="form-h2">Subscribe To Get Updates <span class="form-span"> From The Developer </span></h2>
-            <div class="mc-field-group">
-                <label for="mce-EMAIL" class="label">Email Address <span>:</span></label><br><br>
-                <input type="email" name="EMAIL" class="email-input" id="mce-EMAIL" required><br><br><br>
-            </div>
-
-            <div id="mce-responses">
-                <div class="response" id="mce-error-response" style="display:none;"></div>
-                <div class="response" id="mce-success-response" style="display:none;"></div>
-            </div>
-
-            <!-- Anti-bot hidden input - do not remove -->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_1d08fbe766437108da003cf7a_ce9769412e" tabindex="-1" value="">
-            </div>
-
-            <div class="clear foot">
-               <button  type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe" class="btn-form">subscribe</button>
-            </div>
-        </div>
-    </form>
-</div>
-</section>
-    <footer class="footer-2" data-aos="fade-up">
-      <div class="footer-column">
-        <p>&copy; Daniel Pender 2025. All rights reserved.</p>
-      </div>
-  <div class="footer-column">
-    <h3>Quick Links</h3>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-       <li><a href="#products">Products</a></li>
-       <li><a href="#subscribe">Subscribe</a></li>
-    </ul>
-  </div>
-  <div class="footer-column">
-    <h3>Contact</h3>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=danielefepender@gmail.com&su=Let’s%20Work%20Together&body=Hello" class="email-link">danielefepender@gmail.com</a><br><br>
-    <a href="tel:+2348069970196" class="phone-link"><i class="fa-solid fa-phone"></i>+234-8069-9701-96</a>
-  </div>
-  
-<div id="icons" class="icons ">
-  <div><a href="https://web.facebook.com/DannyBOSSp" class="iitems" target="_blank"><i class="ri-facebook-circle-fill"></i></a></div>
-  <div><a href="https://www.instagram.com/danny_boss_p/" class="iitems" target="_blank"><i class="ri-instagram-fill"></i></a></div>
-  <div><a href="https://x.com/DANNY13PM" class="iitems" target="_blank"><i class="ri-twitter-x-line"></i></a></div>
-  <div><a href="https://wa.me/2348069970196" class="iitems" target="_blank"><i class="ri-whatsapp-fill"></i></a></div>
-  <div><a href="https://www.youtube.com/channel/UCjj6uxYsmI2o5eNPkgbPS7A" class="iitems" target="_blank"><i class="ri-youtube-fill"></i></a></div>
-  <div><a href="https://www.linkedin.com/in/daniel-pender-98ab90354/" class="iitems" target="_blank"><i class="ri-linkedin-fill"></i></a></div>
-  <div><a href="https://github.com/Danny-cyber14" class="iitems" target="_blank"><i class="ri-github-fill"></i></a></div>
-</div>
-</footer>
-
-<!-- Chatbot Widget -->
-<div id="chatbot-toggle">💬</div>
-
-<div id="chatbot-container" class="hidden">
-  <div id="chatbot-header">
-    <span>FAQs</span>
-    <span id="chatbot-back" class="hidden">⬅</span>
-  </div>
-  <div id="chatbot-body">
-    <!-- Tags Section -->
-    <div id="chatbot-tags"></div>
-    <!-- Answer Section -->
-    <div id="chatbot-answer" class="hidden"></div>
-  </div>
-</div>
-
-<!-- Scripts -->
-<link rel="stylesheet" href="chatbot.css" />
-<script src="chatbot.js"></script>
-
-
-<!-- Magnetic effects on btns-->
- <script>
+<script>
   // Select ALL buttons with the same class
 const buttons = document.querySelectorAll(".proj-button, .btn-form, .contact-button, .product-link-b");
 
@@ -356,18 +94,18 @@ buttons.forEach((btn) => {
 <script>
 // Questions & answers
 const faqData = [
-  { tag: "current studies", answer: "I'm currently in the field software enginnering" },
-  { tag: "Current programming language", answer: "I'm currently dealing with JavaScripts and projects on JavaScript" },
-  { tag: "Contact Info", answer: "You can reach me at: danielefepender@gmail.com or +2348069970196" },
-  { tag: "Hobbies", answer: "I enjoy coding, gaming, listening to podcasts and YouTube streaming" },
-  { tag: "Education status", answer: "Currently in High School; 12th grade and will be graduating next year" },
-   { tag: "Projects", answer: "I’ve worked on a wide range of projects — from sleek and responsive websites to interactive JavaScript-based applications, and even more experimental builds that go beyond what’s showcased in my portfolio. The projects listed here are just a sample of my work, meant to highlight some of my favorites. If you’d like to see more, feel free to reach out!" },
-     { tag: "How long does it take you to complete a project?", answer: "Timelines depend on the project’s complexity, but I always focus on delivering high-quality results efficiently. For most projects, I provide a clear schedule upfront and keep you updated at every stage" },
-     { tag: "What technologies do you use?", answer: "I primarily work with HTML, CSS, JavaScript, Tailwind, Bootstrap, but I’m always open to learning new tools if they fit the project’s needs." },
-     { tag: "Can you customize projects to fit my needs?", answer: "Absolutely. Every project I work on is tailored to match the client’s goals, brand, and target audience." },
-       { tag: "Do you maintain or update projects after delivery?", answer: "Yes. I can provide ongoing support, updates, or improvements based on your needs. My goal is to build projects that grow with you." },
-         { tag: "Do you work alone or with a team?", answer: "I usually handle projects independently, but I also collaborate with other developers/designers when the project scope requires it" },
-           { tag: "How do you ensure project quality", answer: "I follow clean coding practices, test across devices, and ensure both performance and user experience are top priorities" },
+{ tag: "current studies", answer: "I'm currently in the field software enginnering" },
+{ tag: "Current programming language", answer: "I'm currently dealing with JavaScripts and projects on JavaScript" },
+{ tag: "Contact Info", answer: "You can reach me at: danielefepender@gmail.com or +2348069970196" },
+{ tag: "Hobbies", answer: "I enjoy coding, gaming, listening to podcasts and YouTube streaming" },
+{ tag: "Education status", answer: "Currently in High School; 12th grade and will be graduating next year" },
+{ tag: "Projects", answer: "I’ve worked on a wide range of projects — from sleek and responsive websites to interactive JavaScript-based applications, and even more experimental builds that go beyond what’s showcased in my portfolio. The projects listed here are just a sample of my work, meant to highlight some of my favorites. If you’d like to see more, feel free to reach out!" },
+{ tag: "How long does it take you to complete a project?", answer: "Timelines depend on the project’s complexity, but I always focus on delivering high-quality results efficiently. For most projects, I provide a clear schedule upfront and keep you updated at every stage" },
+{ tag: "What technologies do you use?", answer: "I primarily work with HTML, CSS, JavaScript, Tailwind, Bootstrap, but I’m always open to learning new tools if they fit the project’s needs." },
+{ tag: "Can you customize projects to fit my needs?", answer: "Absolutely. Every project I work on is tailored to match the client’s goals, brand, and target audience." },
+{ tag: "Do you maintain or update projects after delivery?", answer: "Yes. I can provide ongoing support, updates, or improvements based on your needs. My goal is to build projects that grow with you." },
+{ tag: "Do you work alone or with a team?", answer: "I usually handle projects independently, but I also collaborate with other developers/designers when the project scope requires it" },
+{ tag: "How do you ensure project quality", answer: "I follow clean coding practices, test across devices, and ensure both performance and user experience are top priorities" },
 
 
 
@@ -521,10 +259,6 @@ var $mcj = jQuery.noConflict(true);
     e.preventDefault();
   });
 </script>
-<script>
-  AOS.init();
-</script>
-
-     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
